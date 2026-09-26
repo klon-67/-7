@@ -1,0 +1,10 @@
+from datetime import datetime
+
+date = input("Введіть дату (дд.мм.рррр): ")
+
+target_date = datetime.strptime(date, "%d.%m.%Y")
+today = datetime.now()
+
+difference = target_date - today
+
+print("До заданої дати залишилося:", difference.days, "днів")
