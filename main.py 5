@@ -1,0 +1,18 @@
+from datetime import datetime
+
+def greeting(time):
+    hour = time.hour
+
+    if 5 <= hour < 12:
+        return "Доброго ранку!"
+    elif 12 <= hour < 18:
+        return "Доброго дня!"
+    elif 18 <= hour < 24:
+        return "Доброго вечора!"
+    else:
+        return "Доброї ночі!"
+
+
+current_time = datetime.now()
+
+print(greeting(current_time))
