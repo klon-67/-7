@@ -1,0 +1,11 @@
+from datetime import datetime
+
+def convert_date(date_string):
+    return datetime.strptime(date_string, "%d.%m.%Y")
+
+
+date = input("Введіть дату (дд.мм.рррр): ")
+
+result = convert_date(date)
+
+print("Дата у форматі datetime:", result)
